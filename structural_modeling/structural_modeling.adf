@@ -53,20 +53,26 @@ HierarchyInformation=
 ShowHide=ShowTopLevel
 Selected=
 
-[Files.Data]
-.\src\task1.vhd=VHDL Source Code
-.\src\task2.vhd=VHDL Source Code
-.\src\basic\and2.vhd=VHDL Source Code
-.\src\basic\inv.vhd=VHDL Source Code
-.\src\basic\or2.vhd=VHDL Source Code
-
 [Groups]
 basic=1
 
 [Files]
 /task1.vhd=-1
 /task2.vhd=-1
+/task3_1.vhd=-1
+basic/nand3.vhd=-1
+basic/and3.vhd=-1
 basic/and2.vhd=-1
 basic/inv.vhd=-1
 basic/or2.vhd=-1
+
+[Files.Data]
+.\src\task1.vhd=VHDL Source Code
+.\src\task2.vhd=VHDL Source Code
+.\src\task3_1.vhd=VHDL Source Code
+.\src\basic\nand3.vhd=VHDL Source Code
+.\src\basic\and3.vhd=VHDL Source Code
+.\src\basic\and2.vhd=VHDL Source Code
+.\src\basic\inv.vhd=VHDL Source Code
+.\src\basic\or2.vhd=VHDL Source Code
 
