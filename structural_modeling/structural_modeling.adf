@@ -49,7 +49,7 @@ UCF=
 
 [HierarchyViewer]
 SortInfo=u
-HierarchyInformation=
+HierarchyInformation=and3|struct|0 task3_3|struct|0 
 ShowHide=ShowTopLevel
 Selected=
 
@@ -61,6 +61,8 @@ basic=1
 /task2.vhd=-1
 /task3_1.vhd=-1
 /task3_2.vhd=-1
+/task3_3.vhd=-1
+basic/or3.vhd=-1
 basic/nand3.vhd=-1
 basic/and3.vhd=-1
 basic/and2.vhd=-1
@@ -72,6 +74,8 @@ basic/or2.vhd=-1
 .\src\task2.vhd=VHDL Source Code
 .\src\task3_1.vhd=VHDL Source Code
 .\src\task3_2.vhd=VHDL Source Code
+.\src\task3_3.vhd=VHDL Source Code
+.\src\basic\or3.vhd=VHDL Source Code
 .\src\basic\nand3.vhd=VHDL Source Code
 .\src\basic\and3.vhd=VHDL Source Code
 .\src\basic\and2.vhd=VHDL Source Code
