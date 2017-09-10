@@ -1,6 +1,6 @@
 library ieee;
 use ieee.std_logic_1164.all;
- 
+-- v. 15 
 entity task3_1 is
    port(        					
       G_L, A, B: in std_logic; 
