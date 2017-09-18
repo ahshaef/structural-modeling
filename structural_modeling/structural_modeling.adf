@@ -32,6 +32,12 @@ ON_SERVERFARM_IMPL=0
 ON_SERVERFARM_SIM=0
 DVM_DISPLAY=NO
 FAMILY=<none>
+FUNC_LIB=structural_modeling
+POST_LIB=structural_modeling_post_synthesis
+TIM_LIB=structural_modeling_timing
+SYNTH_STATUS=none
+IMPL_STATUS=none
+PHYSSYNTH_STATUS=none
 
 [LocalVerilogSets]
 EnableSLP=1
@@ -49,12 +55,13 @@ UCF=
 
 [HierarchyViewer]
 SortInfo=u
-HierarchyInformation=task3_3|struct|0 
+HierarchyInformation=task3_3|struct|0
 ShowHide=ShowTopLevel
 Selected=
 
 [Groups]
 basic=1
+test-bench=1
 
 [Files]
 /task1.vhd=-1
@@ -68,6 +75,8 @@ basic/and3.vhd=-1
 basic/and2.vhd=-1
 basic/inv.vhd=-1
 basic/or2.vhd=-1
+test-bench/task3_1_TB.vhd=-1
+test-bench/task3_1_TB_runtest.do=-1
 
 [Files.Data]
 .\src\task1.vhd=VHDL Source Code
@@ -81,4 +90,6 @@ basic/or2.vhd=-1
 .\src\basic\and2.vhd=VHDL Source Code
 .\src\basic\inv.vhd=VHDL Source Code
 .\src\basic\or2.vhd=VHDL Source Code
+.\src\test-bench\task3_1_TB.vhd=VHDL Test Bench
+.\src\test-bench\task3_1_TB_runtest.do=Macro
 
