@@ -10,6 +10,7 @@ list -noreg A
 list -noreg B
 
 list -noreg error
+
 run 70 ns
 # The following lines can be used for timing simulation
 # acom <backannotated_vhdl_file_name>
