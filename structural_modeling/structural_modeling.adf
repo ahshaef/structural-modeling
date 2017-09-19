@@ -55,7 +55,7 @@ UCF=
 
 [HierarchyViewer]
 SortInfo=u
-HierarchyInformation=task3_3|struct|0
+HierarchyInformation=task3_1_tb|testbench_for_task3_1|1 task3_2_tb|testbench_for_task3_2|1 task3_3_tb|testbench_for_task3_3|1
 ShowHide=ShowTopLevel
 Selected=
 
@@ -65,6 +65,10 @@ Selected=
 .\src\task3_1.vhd=VHDL Source Code
 .\src\task3_2.vhd=VHDL Source Code
 .\src\task3_3.vhd=VHDL Source Code
+.\src\task4.vhd=VHDL Source Code
+.\src\basic\sum1.vhd=VHDL Source Code
+.\src\basic\xor2.vhd=VHDL Source Code
+.\src\basic\half_sum.vhd=VHDL Source Code
 .\src\basic\or3.vhd=VHDL Source Code
 .\src\basic\nand3.vhd=VHDL Source Code
 .\src\basic\and3.vhd=VHDL Source Code
@@ -77,6 +81,8 @@ Selected=
 .\src\test-bench\task3_2\task3_2_TB_runtest.do=Macro
 .\src\test-bench\task3_3\task3_3_TB.vhd=VHDL Test Bench
 .\src\test-bench\task3_3\task3_3_TB_runtest.do=Macro
+.\src\test-bench\task4\sum2_TB.vhd=VHDL Test Bench
+.\src\test-bench\task4\sum2_TB_runtest.do=Macro
 
 [Groups]
 basic=1
@@ -84,6 +90,7 @@ test-bench=1
 test-bench\task3_1=1
 test-bench\task3_2=1
 test-bench\task3_3=1
+test-bench\task4=1
 
 [Files]
 /task1.vhd=-1
@@ -91,6 +98,10 @@ test-bench\task3_3=1
 /task3_1.vhd=-1
 /task3_2.vhd=-1
 /task3_3.vhd=-1
+/task4.vhd=-1
+basic/sum1.vhd=-1
+basic/xor2.vhd=-1
+basic/half_sum.vhd=-1
 basic/or3.vhd=-1
 basic/nand3.vhd=-1
 basic/and3.vhd=-1
@@ -103,4 +114,6 @@ test-bench\task3_2/task3_2_TB.vhd=-1
 test-bench\task3_2/task3_2_TB_runtest.do=-1
 test-bench\task3_3/task3_3_TB.vhd=-1
 test-bench\task3_3/task3_3_TB_runtest.do=-1
+test-bench\task4/sum2_TB.vhd=-1
+test-bench\task4/sum2_TB_runtest.do=-1
 
