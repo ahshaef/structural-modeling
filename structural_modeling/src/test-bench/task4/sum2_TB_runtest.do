@@ -6,7 +6,9 @@ list
 list -noreg A
 list -noreg B
 list -noreg S_1
+list -noreg C_1
 list -noreg S_2
+list -noreg C_2
 list -noreg C 
 
 list -noreg error
