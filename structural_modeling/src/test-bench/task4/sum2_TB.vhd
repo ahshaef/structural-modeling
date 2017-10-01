@@ -22,8 +22,8 @@ architecture TB_ARCHITECTURE of sum2_tb is
 		C : out STD_LOGIC );
 	end component;
 
-	signal A : STD_LOGIC_VECTOR(1 downto 0) := std_logic_vector(to_unsigned(0, 2));
-	signal B : STD_LOGIC_VECTOR(1 downto 0) := std_logic_vector(to_unsigned(0, 2));
+	signal A : STD_LOGIC_VECTOR(1 downto 0) := "00";
+	signal B : STD_LOGIC_VECTOR(1 downto 0) := "00";
 	
 	signal S_1 : STD_LOGIC_VECTOR(1 downto 0);
 	signal C_1 : STD_LOGIC;
