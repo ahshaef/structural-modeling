@@ -3,13 +3,13 @@ comp -include "$dsn\src\task3_3.vhd"
 comp -include "$dsn\src\test-bench\task3_3\task3_3_TB.vhd" 
 asim +access +r TESTBENCH_FOR_task3_3 
 
-list 
+wave 
 
-list -noreg X
-list -noreg Y
-list -noreg Z
+wave -noreg X
+wave -noreg Y
+wave -noreg Z
 
-list -noreg error
+wave -noreg error
 
 run 70 ns
 # The following lines can be used for timing simulation
