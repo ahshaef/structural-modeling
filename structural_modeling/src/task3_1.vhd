@@ -2,29 +2,29 @@ library ieee;
 use ieee.std_logic_1164.all;
 -- v. 15 
 entity task3_1 is
-   port(        					
-      G_L, A, B: in std_logic; 
-      Y0, Y1, Y2, Y3: out std_logic
-   ); 
+	port(        					
+		G_L, A, B: in std_logic; 
+		Y0, Y1, Y2, Y3: out std_logic
+		); 
 end task3_1;
 
 architecture struct of task3_1 is
-
-component nand3
-	port(        					
-		A, B, C: in std_logic; 
-		R: out std_logic
-	);	
-end component;
-
-component inv
-	port(
-		A: in std_logic;
-		nA: out std_logic
-	);
-end component;
-
-signal nG_L, nA, nB: std_logic;
+	
+	component nand3
+		port(        					
+			A, B, C: in std_logic; 
+			R: out std_logic
+			);	
+	end component;
+	
+	component inv
+		port(
+			A: in std_logic;
+			nA: out std_logic
+			);
+	end component;
+	
+	signal nG_L, nA, nB: std_logic;
 begin						  
 	U1: inv port map(G_L, nG_L);
 	U2: inv port map(A, nA);

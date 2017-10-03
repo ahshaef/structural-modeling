@@ -1,6 +1,8 @@
 library ieee;
 use ieee.std_logic_1164.all;
-use ieee.numeric_std.all;
+use ieee.numeric_std.all;  
+use IEEE.STD_LOGIC_ARITH.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
 
 
 entity sum2_tb is
@@ -8,11 +10,6 @@ end sum2_tb;
 
 
 architecture TB_ARCHITECTURE of sum2_tb is
-	function inc_std_logic_vector(vector: std_logic_vector) 
-		return std_logic_vector is
-	begin
-		return std_logic_vector(to_unsigned(to_integer(unsigned(vector)) + 1, vector'length));	
-	end inc_std_logic_vector;
 
 	component sum2
 	port(
@@ -33,7 +30,7 @@ architecture TB_ARCHITECTURE of sum2_tb is
 	
 	signal error : std_logic;
 begin
-	behavioral : sum2
+	behavioral : entity sum2(beh)
 		port map (
 			A => A,
 			B => B,
@@ -41,7 +38,7 @@ begin
 			C => C_1
 		);	 
 		
-	structural : sum2
+	structural : entity sum2(struct)
 		port map (
 			A => A,
 			B => B,
@@ -51,19 +48,8 @@ begin
 		
 	error <= '0' when S_1 = S_2 and C_1 = C_2 else '1';											 
 	
-	A <= inc_std_logic_vector(A) after 10 ns;
-	B <= inc_std_logic_vector(B) after 40 ns;
+	A <= A + "1" after 10 ns;
+	B <= B + "1" after 40 ns;
 		
 end TB_ARCHITECTURE;
-
-configuration TESTBENCH_FOR_sum2 of sum2_tb is
-	for TB_ARCHITECTURE
-		for behavioral : sum2
-			use entity work.sum2(beh);
-		end for;
-		for structural : sum2
-			use entity work.sum2(struct);
-		end for;
-	end for;
-end TESTBENCH_FOR_sum2;
 

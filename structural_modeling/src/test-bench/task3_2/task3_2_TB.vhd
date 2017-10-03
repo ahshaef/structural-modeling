@@ -24,7 +24,7 @@ architecture TB_ARCHITECTURE of task3_2_tb is
 	
 	constant clock_period : time := 10 ns;
 begin
-	structural : task3_2
+	structural : entity task3_2(struct)
 		port map (
 			X => X,
 			Y => Y,
@@ -32,7 +32,7 @@ begin
 			F => F_1
 		);
 		
-	behavioral : task3_2
+	behavioral : entity task3_2(beh)
 		port map (
 			X => X,
 			Y => Y,
@@ -47,15 +47,3 @@ begin
 	error <= F_1 xor F_2;
 
 end TB_ARCHITECTURE;
-
-configuration TESTBENCH_FOR_task3_2 of task3_2_tb is
-	for TB_ARCHITECTURE
-		for structural : task3_2
-			use entity work.task3_2(struct);
-		end for;
-		for behavioral : task3_2
-			use entity work.task3_2(beh);
-		end for;
-	end for;
-end TESTBENCH_FOR_task3_2;
-

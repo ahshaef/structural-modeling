@@ -55,7 +55,7 @@ UCF=
 
 [HierarchyViewer]
 SortInfo=u
-HierarchyInformation=half_sum|struct|0 sum1|struct|0 sum2|struct|0 sum2_tb|testbench_for_sum2|1 task3_3_tb|testbench_for_task3_3|1 
+HierarchyInformation=and2|beh|0 sum2_tb|testbench_for_sum2|1 
 ShowHide=ShowTopLevel
 Selected=
 

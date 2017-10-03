@@ -1,37 +1,37 @@
 library ieee;
 use ieee.std_logic_1164.all;
- 
+
 entity mux2 is
-   port(        					
-      A, B, S: in std_logic; 
-      Z: out std_logic
-   ); 
+	port(        					
+		A, B, S: in std_logic; 
+		Z: out std_logic
+		); 
 end mux2;
 
 architecture struct of mux2 is
-
-component and2
-	port(        					
-		A, B: in std_logic; 
-		R: out std_logic
-	);	
-end component;
-
-component inv
-	port(
-		A: in std_logic;
-		nA: out std_logic
-	);
-end component;
-
-component or2
-	port(
-		A, B: in std_logic;
-		R: out std_logic
-	);
-end component;
-
-signal nS, AnS, BS: std_logic;
+	
+	component and2
+		port(        					
+			A, B: in std_logic; 
+			R: out std_logic
+			);	
+	end component;
+	
+	component inv
+		port(
+			A: in std_logic;
+			nA: out std_logic
+			);
+	end component;
+	
+	component or2
+		port(
+			A, B: in std_logic;
+			R: out std_logic
+			);
+	end component;
+	
+	signal nS, AnS, BS: std_logic;
 begin	
 	U1: inv port map(S, nS);
 	U2: and2 port map(A, nS, AnS);
